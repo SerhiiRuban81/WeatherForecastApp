@@ -99,7 +99,7 @@ namespace WindowsFormsApp89
                 //Labels = new[] { "Jan", "Feb", "Mar", "Apr", "May" }
                 Labels = dates.ToList()
             });
-            cartesianChart1.LegendLocation = LegendLocation.Bottom;
+            cartesianChart1.LegendLocation = LegendLocation.Top;
             cartesianChart1.AxisY.Clear();
             cartesianChart1.AxisY.Add(new Axis
             {
