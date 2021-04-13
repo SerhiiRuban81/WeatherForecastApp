@@ -129,7 +129,7 @@ namespace WindowsFormsApp89
                 Title = "Время",
                 Labels = dates.ToList()
             });
-            cartesianChart2.LegendLocation = LegendLocation.Bottom;
+            cartesianChart2.LegendLocation = LegendLocation.Top;
             cartesianChart2.AxisY.Clear();
             //ToString("N1") + "°C"
             cartesianChart2.AxisY.Add(new Axis
