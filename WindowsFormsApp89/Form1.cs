@@ -44,7 +44,7 @@ namespace WindowsFormsApp89
                 cartesianChart1.BeginInvoke(new ChartDelegate(UpdateChart), example.hourly);
                 IEnumerable<double> temps = example.hourly.Select(t => t.temp);
                 IEnumerable<int> humidity = example.hourly.Select(t => t.humidity);
-                IEnumerable<string> dates = example.hourly.Select(t => new DateTime(1970, 1, 1).AddSeconds(t.dt).ToString());
+                IEnumerable<string> dates = example.hourly.Select(t => new DateTime(1970, 1, 1).AddSeconds(t.dt).ToString("dd.M.y HH:mm"));
                 cartesianChart2.BeginInvoke(new ChartDelegate<int>(UpdateChart2<int>), humidity, dates);
                 cartesianChart1.BeginInvoke(new ChartDelegate(UpdateChart), example.hourly);
                
